@@ -33,8 +33,6 @@
 # $1 is the directory and is required, failing to do so may result in unintended results.
 for file in $1
 do
-    #whatever you need with "$file"
-    #file="$file"
     if [ -f "$file" ]; then   
       echo $file 
 	  cp -rp $file $file".bak"
