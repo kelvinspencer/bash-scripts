@@ -34,10 +34,10 @@
 for file in $1
 do
     if [ -f "$file" ]; then   
-      echo $file 
-	  cp -rp $file $file".bak"
-	  #sed -i 's/bx29)}());/\n\n\/*deleted _0x6eea hackinjection*\/\n\n/' $file
-	  sed -i 's/bx29)}());/\n\n\n\n/' $file
-	  sed -i '/_0x6eea/d' $file
+     	echo $file 
+	cp -rp $file $file".bak"
+	#sed -i 's/bx29)}());/\n\n\/*deleted _0x6eea hackinjection*\/\n\n/' $file
+	sed -i 's/bx29)}());/\n\n\n\n/' $file
+	sed -i '/_0x6eea/d' $file
     fi
 done
